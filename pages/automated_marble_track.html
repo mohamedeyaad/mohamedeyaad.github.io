@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mohamed Eyad's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/lightbox.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="../index.html" >Mohamed Eyad</a></h1>
+					<p>Senior Undergraduate Mechatronics Engineer</p>
+				</header>
+				<nav id="nav">
+					<ul>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/mohamed-eyad-b73404191" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/mohamedeyaad" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:mooeyad@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+						<section id="one">
+							<div class="image main" data-position="bottom" >
+								<img src="../images/pic03.png" alt="" />
+							</div>
+								<div class="container">
+									<header class="major">
+										<h2>Autonomous Service Robot</h2>
+									</header>
+									<p>This project was supervised Ainshams University, Egypt.
+										The main target of the project is to design and build an autonomous platform suitable for doing servicing tasks in the coffee shops.								
+										This project aims on designing the platform itself and the first module of this platform which is an autonomous fruit picking module based on a 6-DoF robotic arm.
+
+										The main requirements for this robot were:
+										<ul>
+											<li>The robot should be able to navigate autonomously in an indoor environment. Therefore, it must be able to localize itself within its working enviroment and detect static and dynamic obstacles and avoid them</li>
+											<li>The robot should build a map for the environment for the first time it operates in and then be able to localize itself in it.</li>
+										</ul>
+
+										the rqt_graph on the robot and the behaviour diagram of the robot.
+										</p>
+
+										<div class="gallery">
+											<a href="../images/robofarm-platform.jpg" data-lightbox="mygallery" data-title="The real platform that was used for testing"><img src="../images/robofarm-platform.jpg"></a>
+											<a href="../images/robofarm-real1.jpeg" data-lightbox="mygallery" data-title="The real platform"><img src="../images/robofarm-real1.jpeg"></a>
+											<a href="../images/robofarm-real2.jpeg" data-lightbox="mygallery" data-title="The real platform"><img src="../images/robofarm-real2.jpeg"></a>
+											<a href="../images/robofarm-rosgraph.png" data-lightbox="mygallery" data-title="The rosgraph of the test robot"><img src="../images/robofarm-rosgraph.png"></a>
+											<a href="../images/robofarm-behavior.png" data-lightbox="mygallery" data-title="The behaviour diagram of the robot with move_base_sequence"><img src="../images/robofarm-behavior.png"></a>
+										</div>
+
+										A very quick demo made during testing the RGB strawberry instace segmentation. The video shows that we only detected mature fruit which is suitable for picking. After that, the grasping point was calculated using the depth image.<br/>
+										<video width="720" height="480" controls >
+											<source src="../videos/robofarm/robofarm-yolact.mp4" type="video/mp4">
+										</video>
+										<br/>This video shows navigation with the test platform (<a href="d435ilocalization.html">D435i Localization</a> was used)
+										<video width="720" height="480" controls >
+											<source src="../videos/robusta/navigation stack_1.mp4" type="video/mp4">
+										</video>
+										<br/>This video shows the robot while mapping the enviroment for the first time using Gmapping SLAM algorithm.
+										<video width="720" height="480" controls >
+											<source src="../videos/robusta/SLAM using gmapping - Robusta.mp4" type="video/mp4">
+										</video>											
+										<br/>The last video shows when the robot localizes an object, stops, and moves the arm to grasp it. Grasping was not simulated (fruit should be handled with a soft gripper).
+										<video width="720" height="480" controls >
+											<source src="../videos/robofarm/robofarm-grasping.mp4" type="video/mp4">
+										</video>												
+										<br/><br/>	
+										<ul><a href="../index.html#three" class="button">Back</a></ul>
+
+								</div>
+							</section>
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/lightbox.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
