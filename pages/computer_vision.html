@@ -10,7 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="stylesheet" href="../assets/css/lightbox.css" />
 	</head>
 	<body class="is-preload">
 
@@ -40,58 +39,47 @@
 
 				<!-- Main -->
 					<div id="main">
-							<!-- One -->
-						<section id="one">
-							<div class="image main" data-position="center" >
-								<img src="../images/Screenshot 2022-11-11 005112.png" alt="" />
-							</div>
+
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="bottom" >
+									<img src="../images/banner1.jpg" alt="" />
+								</div>
 								<div class="container">
 									<header class="major">
 										<h2>Vehicle Counting, Classification & Detection using YOLOv5</h2>
 									</header>
-									<p>This  project is realted to COmputer Vision course at Ain Shams University, Egypt.
+									<p>This  project was part of the "Computer Vision" course @ Faculty of Engineering - Ain Shams University, Egypt.
 										Vehicle Counting, Classification & Detection using OpenCV & Python
 										Today, we’re going to build an advanced vehicle detection and classification project using OpenCV. We’ll use the YOLOv3 model with OpenCV-python. Open-CV is a real-time computer vision library of Python. We can use YOLO directly with OpenCV.
-										The main requirements for this robot were:
-										<ul>
-											<li>The robot should be able to navigate autonomously in an outdoor environment. Therefore, it must be able to localize itself within its working enviroment and detect static and dynamic obstacles and avoid them</li>
-											<li>The robot should build a map for the environment for the first time it operates in and then be able to localize itself in it.</li>
-											<li>The robot will have to patrol through some waypoints in the map to check for mature fruit.</li>
-											<li>The robot needs to detect mature fruit once it is in its field of view, localize it, and navigative towards it and pick it.</li>
-										</ul>
-
-										This project resulted in making three packages. One of which is already published, two others are on the way.<br/><br/>
-
-										The robot's first design was inspired from SAGA's robot throvald. As a result, I worked on a package to drive the four independently steerable wheels of the robot, which then evolved into <a href="swervesteering.html">Swerve Steering Package</a>.<br/><br/>
+										<br/><br/> This video is showing our one of our testing trials.										
 										
-										The robot has two D435i cameras, two wheel encoders, and six joint encoders on the robotic arm. Robot's localization depended heavily on the D435i camera. So, some modifications were made to the camera's parameters <a href="d435ilocalization.html">(D435i localization package)</a>. Moreover, the robot had to patrol through some waypoints as mentioned in the requirements, and the <a href="movebasesequence.html">move_base_sequence</a> package was made for it.<br/><br/>
-										
-										For the strawberry detection, we used YOLACT algorithm. The robot behaviour was simple; it keeps patrolling through a registered array of waypoints, a pause service is called once it localizes a mature fruit. Then, it plans a trajectory for the robotic arm to pick the fruit, picks it, and a resume service is then called to continue patrolling. 
-
-										Due to the pandemic and the lockdown, manufacturing the platform was a challenge. We had a small test platform where we tested all the algorithms. The following figures shows the test platform, some figures of the progress we could make in manufacturing the platform, the rqt_graph on the robot and the behaviour diagram of the robot.
-										</p>
-
-										<div class="gallery">
-											<a href="../images/robofarm-platform.jpg" data-lightbox="mygallery" data-title="The real platform that was used for testing"><img src="../images/robofarm-platform.jpg"></a>
-											<a href="../images/robofarm-real1.jpeg" data-lightbox="mygallery" data-title="The real platform"><img src="../images/robofarm-real1.jpeg"></a>
-											<a href="../images/robofarm-real2.jpeg" data-lightbox="mygallery" data-title="The real platform"><img src="../images/robofarm-real2.jpeg"></a>
-											<a href="../images/robofarm-rosgraph.png" data-lightbox="mygallery" data-title="The rosgraph of the test robot"><img src="../images/robofarm-rosgraph.png"></a>
-											<a href="../images/robofarm-behavior.png" data-lightbox="mygallery" data-title="The behaviour diagram of the robot with move_base_sequence"><img src="../images/robofarm-behavior.png"></a>
-										</div>
-										<br/>This video shows the robotic platform in simulation.
-										<video width="720" height="480" controls >
+										<video width="720" height="480" controls > 
 											<source src="../videos/computer_vision/final.mp4" type="video/mp4">
-										</video>												
-										<br/><br/>	
+										</video>
+										
+										<br/><br/>
 										<ul><a href="../index.html#three" class="button">Back</a></ul>
 
 								</div>
 							</section>
+
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
 			</div>
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/lightbox.js"></script>
 			<script src="../assets/js/jquery.scrollex.min.js"></script>
 			<script src="../assets/js/jquery.scrolly.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>
