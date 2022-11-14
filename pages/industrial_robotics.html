@@ -25,7 +25,6 @@
 					</ul>
 				</nav>
 				<footer>
-					<div class="copy-box">COPIED!</div> 
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/mohamed-eyad-b73404191" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="https://github.com/mohamedeyaad" class="icon brands fa-github"><span class="label">Github</span></a></li>
@@ -39,56 +38,52 @@
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- One -->
 							<section id="one">
-								<div class="image main" data-position="bottom" >
-									<img src="../images/banner.jpg" alt="" />
+								<div class="image main" data-position="center" >
+									<img src="../images/industrial_robotics/thumbnail.png" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
-										<h2>6 DOF Manipulator</h2>
+										<h2>Industrial Robotics Project</h2>
 									</header>
-									<p>Participated in a team to model a 6-DOF manipulator by developing a URDF file for modelling the robot links, and then uses Moveit toolbox to plan a trajectory to a given cartesian goal and visualize the motion of the robot on Rviz. Finally, we controlled each joint using PID controller to achieve the generated trajectory on Gazebo.<br/><br/>
-										This project was part of the "Industrial Robotics" course @ Ain Shams University.
-
-										<ul>	
-											This project consists of three parts:
-											<li><b>ID localization and cropping:</b> Detects the face or the back of the ID, extracts the corners, and crops the ID.</li>
-											<li><b>Face verification:</b> Extracts the face picutre from the ID and verifies it is the same person in the selfie picutre.</li>
-											<li><b>Text segmentation:</b> A neural network-based filter removes the background and only keeps the text to ease the OCR step. </li>
-											<li><b>OCR:</b> Optical character recognition step, and the final one.</li>
-										</ul>
-										Second stage of face verification utilizes a collection of pre-trained face verification models. The "meta-model" was then finetuned with a few pairs of (Selfie, ID). Finally, the total accuracy was tested with <a  onclick="window.open('http://vintage.winklerbros.net/facescrub.html','_blank');">FaceScrub Dataset</a> and it was 92%.
-										<br/><br/>Below is shown some results of the other mentioned steps.						
+									<p>
+										This project was part of the "Industrial Robotics" course at Faculty of Engineering, Ain Shams University, Egypt.
+										The main target of the project is to design and build an autonomous mobile robot suitable for doing servicing tasks in the coffee shops.
+										You can check the organisation of the project on Github and check the poster as well.								
+										<br/><br/>
+										<ul class="feature-icons">
+											<li class="icon brands fa-github"><a href="https://github.com/mohamedeyaad/6DOF_Robot_Arm_Control_in_ROS" target="_blank">Code</a></li>
+										</ul>	
+										<b>This project consisted of 3 milestones:</b>
+										<ul>
+											<li>Model a 6-DOF manipulator by developing a URDF file for modelling the robot links, by using our own dimensions and test it on Rviz</li>
+											<li>Use Moveit toolbox to plan a trajectory to a given cartesian goal and visualize the motion of the robot on Rviz.</li>
+											<li>Take the joint angles produced by Moveit toolbox as a setpoint to control each joint in Gazebo simulator using PID controller and reach the desired goal.</li>
+										</ul>							
 										</p>
+										<div class="gallery">
+											<p>ROS Control in Sumation Architecture</p>
+											<a href="../images/industrial_robotics/ROS Control in Simulation.png" data-lightbox="mygallery" data-title="The examples in the image shows how well IDs are localized"><img src="../images/industrial_robotics/ROS Control in Simulation.png" width="720"></a>
+											<p>System Block Diagram</p> 
+											<a href="../images/industrial_robotics/System Block Diagram.png" data-lightbox="mygallery" data-title="1"><img src="../images/industrial_robotics/System Block Diagram.png" width="720"></a>
+										</div>
+										<br>
+										This video narrated by me shows the whole project:
+										<video width="720" controls >
+												<source src="../videos/robot_eef_moving_by_python_node.mp4" type="video/mp4">
+											</video>												
+	
+										<p><br/>Implementation details can be discussed upon request.</p>
+	
+										<ul><a href="../index.html#three" class="button">Back</a></ul>
 
-									<div class="gallery">
-										<p>ROS Control in Sumation Architecture</p>
-										<a href="../images/industrial_robotics/ROS Control in Simulation.png" data-lightbox="mygallery" data-title="The examples in the image shows how well IDs are localized"><img src="../images/industrial_robotics/ROS Control in Simulation.png" width="720"></a>
-										<p>System Block Diagram</p> 
-										<a href="../images/industrial_robotics/System Block Diagram.png" data-lightbox="mygallery" data-title="1"><img src="../images/industrial_robotics/System Block Diagram.png" width="720"></a>
-									</div>
-
-									<p>This video narrated by me shows the whole project:</p>
-									<video width="720" controls >
-											<source src="../videos/robot_eef_moving_by_python_node.mp4" type="video/mp4">
-										</video>												
-
-									<p><br/>Implementation details can be discussed upon request.</p>
-									<ul><a href="../index.html#three" class="button">Back</a></ul>
-									
-									Please check ROS Discourse for any discussion about the project, email me to add you to slack if you think you can help, follow my posts on LinkedIn as I constantly talk about what I do, or have a look at the code on Github. PLease give proper credits to the repo if you use it in your work.<br/><br/>
-									<ul class="feature-icons">
-										<li class="icon brands fa-github"><a href="https://github.com/mohamedeyaad/6DOF_Robot_Arm_Control_in_ROS" target="_blank">Code</a></li>
-									</ul>
 								</div>
 							</section>
 
 
 
 					</div>
-
 				<!-- Footer -->
 					<section id="footer">
 						<div class="container">

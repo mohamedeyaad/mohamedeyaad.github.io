@@ -51,43 +51,29 @@
 									<p>
 										This project was the course project of "Design of Mechatronics 2" supervised by the Mechatronics Department @ Faculty of Engineering - Ain Shams University, Egypt.
 										The main target of the project is to design and build an autonomous mobile robot suitable for doing servicing tasks in the coffee shops.
-										Grade Achieved: A 
-										You can check the organisation of the project on Github and check the poster as well.								
+										<br>Grade achieved: A 
+										<br>You can check the organization of the project on Github, as well as the poster from here.								
 										<br/><br/>
 										<ul class="feature-icons">
 											<li class="icon solid fa-book"><a href="../files/Final_Poster.pdf" target="_blank">Poster</a></li>
 											<li class="icon brands fa-github"><a href="https://github.com/ASU-Robusta" target="_blank">Code</a></li>
 										</ul>	
-										<br/><br/>Participated in a team to design & manufacture a fully autonomous service robot in coffee shops.
-										Implemented the fastSLAM (Gmapping Package in ROS) to map the environment and navigate through 
-										it using the Navigation Stack.
-										<br/><br/> <b>The main requirements for this robot were:</b>
+										<b>The main requirements for this robot were:</b>
 										<ul>
 											<li>The robot should be able to navigate autonomously in an indoor environment. Therefore, it must be able to localize itself within its working enviroment and detect static and dynamic obstacles and avoid them.</li>
-											<li>The robot should build a map for the environment for the first time it operates in and then be able to localize itself in it. Rplidar was used for this task. Gmapping Pacakge in ROS which relies on the fastSLAM algorithm was implemented.</a></li>
-											<li>PID speed control on the DC motors were implemented on the Low-Level Control (STM32)</li>
-											<li>SLAM and path planning were implemented by using 2D Lidar (Rplidar) interfaced with Jetson 
-												Nano.</li>
+											<li>The robot should build a map for the environment for the first time it operates in and then be able to localize itself in it. RpLiDaR was used for this task interfaced with Nvidia Jetson Nano. Gmapping Pacakge in ROS, which relies on the fastSLAM algorithm, was implemented.</a></li>
+											<li>PID controller on the wheels, with encoders, were implemented on the Low-Level Control (STM32), to control the speed of the robot.</li>
 											<li>Emotion recognition of the customer using modern techniques of computer vision.</li>
-											Tools used: Inventor, SolidWorks, ROS, Gazebo, Rviz
+											<i>Tools used: Inventor, SolidWorks, ROS, Gazebo, Rviz, </i>
 										</ul>							
-										the Block Diagram of the robot:
-										<a href="../images/robusta/block_diagram.png" data-lightbox="mygallery" data-title="The rosgraph of the test robot"><img src="../images/robusta/block_diagram.png" width="600" height="400"></a>
-										<br>The software Architecture of the robot:
-										<a href="../images/robusta/Architecture.png" data-lightbox="mygallery" data-title="The behaviour diagram of the robot with move_base_sequence"><img src="../images/robusta/Architecture.png" width="600" height="400"></a>
+										<b>System Block Diagram:</b>
+										<br>It shows the sensors and actuators that have been used in the robot and the communication protocol done between each device:
+										<br>
+										<a href="../images/robusta/block_diagram.png" data-lightbox="mygallery" data-title="System Block Diagram"><img src="../images/robusta/block_diagram.png" width="720"></a>
+										<br><b>System Software Architecture:</b>
+										<br><a href="../images/robusta/Architecture.png" data-lightbox="mygallery" data-title="System Software Architecture"><img src="../images/robusta/Architecture.png" width="720"></a>
 
-										</p>
-										<div class="gallery">
-											The following map was a real map made by the robot in the real environment.
-											<a href="../images/robusta/map.png" data-lightbox="mygallery" data-title="The real platform"><img src="../images/robusta/map.png" width="320"></a>
-											<br> video of real mapping:<br>
-											<video width="320" controls >
-												<source src="../videos/robusta/Hector_Slam.mp4" type="video/mp4">
-											</video>
-										</div>
-										
-										<br/><br/>Currently, the controller have been implemented, and many showed great interest in the work and want to join the development and maintenance. Unfortunately, there is some issues with the odometry calculations and we're working on it. So, it's not published yet. If you would like to discuss some details, want to contribute to the package, or have any ideas to add, do not hesitate to contact me.
-										<br/><br/> Here are some videos showing the testing of some subsystems:
+										<br/><br/><b>Here are some videos showing the testing of some subsystems:</b>
 										<br/>This video shows testing mapping by the LiDaR on Rviz.
 										<video width="720" controls >
 											<source src="../videos/robusta/RpLiDaR testing Mapping.mp4" type="video/mp4">
@@ -96,16 +82,23 @@
 										<video width="320" controls >
 											<source src="../videos/robusta/Interfacing Lidar with Jetson Nano, SLAM.mov" type="video/mp4">
 										</video>
-										<br/>This video shows the robot while mapping the enviroment for the first time using Gmapping SLAM algorithm in Gazebo.
+										<div class="gallery">
+											The following map was a real map made by the robot in the real environment.
+											<a href="../images/robusta/map.png" data-lightbox="mygallery" data-title="The real platform"><img src="../images/robusta/map.png" width="320"></a>
+											<br> video of real mapping<br>
+											<video width="320" controls >
+												<source src="../videos/robusta/Hector_Slam.mp4" type="video/mp4">
+											</video>
+										</div>
+										This video shows the robot while mapping the enviroment for the first time using Gmapping SLAM algorithm in Gazebo.
 										<video width="720" controls >
 											<source src="../videos/robusta/SLAM using gmapping - Robusta.mp4" type="video/mp4">
 										</video>	
-									
 										<br/>Video shows the navigation of the robot and the whole working cycle.
 										<video width="720" poster="../videos/robusta/thumbnail.png" controls >
 											<source src="../videos/robusta/navigation stack_1.mp4" type="video/mp4">
 										</video>
-										<br/>In order for this node to work correctly, the child_frame_id of the odom topic will be the base frame of the robot. So it has to be set correctly along with the wheels configurations (if set via a yaml file). The odometry method has a problem with singularities which will be solved soon.
+										<br><br/><i>*This project is still under development, my team and I are planning to market the robot to one of the coffee shops in Egypt.</i>
 										</p>
 										<ul><a href="../index.html#three" class="button">Back</a></ul>
 
