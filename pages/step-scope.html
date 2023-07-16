@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mohamed Eyad's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/lightbox.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
+					<h1 id="logo"><a href="../index.html" >Mohamed Eyad</a></h1>
+					<p>Senior Undergraduate Mechatronics Engineer</p>
+				</header>
+				<nav id="nav">
+					<ul>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/mohamed-eyad-b73404191" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/mohamedeyaad" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:mooeyad@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<!-- One -->
+							<section id="one">
+								<div class="image main" data-position="center" >
+									<img src="../images/step_scope/LOGO_color.png" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Step Scope</h2>
+									</header>
+									<p>
+										Step Scope is a project developed as part of the "Biomedical Engineering" course supervised by Human Centered Mechatronics Lab @ Faculty of Engineering - Ain Shams University, Egypt.
+										The main objective of this project is to design and develop a wireless, portable, and wearable system that utilizes inertial measurement units (IMUs) and force-sensitive resistors (FSRs) to monitor foot plantar pressure and gait in individuals with diabetic foot disease (DFD) or other neurological abnormalities affecting gait.
+										<br>Grade achieved: A 
+										<br>You can check the project on Github.								
+										<br/>
+										<ul class="feature-icons">
+											<li class="icon brands fa-github"><a href="https://github.com/mohamedeyaad/Step-Scope" target="_blank">Code</a></li>
+										</ul>	
+										</p><b>The system provides the following features:</b>
+										<ul>
+											<li>Real-time visualization of foot pressure using color coding</li>
+											<li>Measurement of various spatiotemporal gait parameters</li>
+											<li>Detection of gait events and phases</li>
+											<li>Analysis of shank kinematics</li>
+											<li>Estimation of the center of pressure (CoP)</li>
+											<li>Assessment of patient stability based on FSR and IMU data</li>
+										</ul>
+										<i>The collected data is transmitted wirelessly to a PC for visualization, analysis, and reporting purposes. The system is designed with a focus on professional wiring, communication, software, and user interface.</i>	
+										</p><b>Graphical User Interface:</b>
+										<br>It shows the GUI where you enter the data of the patient.
+										<br>
+										<a href="../images/step_scope/GUI.jpeg" data-lightbox="mygallery" data-title="Graphical User Interface"><img src="../images/step_scope/GUI.jpeg" width="720"></a>
+										<br></br><b>Example of the working project:</b>
+										<br>This shows the real-time visualization of the foot pressure, and whether the connection is made between the ESP and the the GUI or not. it shows the knee angle knowing the angle of the shank and thigh.
+										<br><a href="../images/step_scope/Example - Mid Stance.jpeg" data-lightbox="mygallery" data-title="Example of the working project"><img src="../images/step_scope/Example - Mid Stance.jpeg" width="720"></a>
+										<br></br><b>Hardware of the Project:</b>
+										<br><a href="../images/step_scope/Hardware.png" data-lightbox="mygallery" data-title="Hardware of the Project"><img src="../images/step_scope/Hardware.png" width="720"></a>
+										<br></br>
+										<b>Below is a video showing the project:</b>
+										<video id="myVideo" width="720" controls>
+											<source src="../videos/step_scope/MCT442 - Biomedical Engineering Project - Spring 2023.mp4" type="video/mp4">
+										  </video>
+										  
+										  <script>
+											document.addEventListener('DOMContentLoaded', function() {
+											  var video = document.getElementById('myVideo');
+											  video.addEventListener('loadedmetadata', function() {
+												video.currentTime = 2; // Set the time in seconds to generate the thumbnail
+												video.addEventListener('seeked', function() {
+												  var canvas = document.createElement('canvas');
+												  canvas.width = video.videoWidth;
+												  canvas.height = video.videoHeight;
+												  var ctx = canvas.getContext('2d');
+												  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+												  var thumbnailUrl = canvas.toDataURL();
+												  video.setAttribute('poster', thumbnailUrl);
+												});
+											  });
+											});
+										  </script>
+										  <br></br>
+										<ul><a href="../index.html#three" class="button">Back</a></ul>
+
+								</div>
+							</section>
+
+
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/lightbox.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
