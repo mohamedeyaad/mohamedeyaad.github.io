@@ -44,11 +44,11 @@
         <li><a href="../index.html#projects"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg>Projects</a></li>
         <li aria-current="page">Collaborative assembly</li>
       </ol>
-      <p class="kicker">BSc graduation project · 2023 · Grade A+</p>
+      <p class="kicker">BSc graduation project · Team of 6 · 2023 · Grade A+</p>
       <h1 id="page-title">Human-robot collaborative assembly with an ABB IRB 120</h1>
       <p class="lede">A low-cost human-robot collaboration cell for industrial assembly: the robot finds and handles parts while a person works next to it, and re-plans around them.</p>
       <ul class="facts"><li><span>Where</span>Robotics Lab, Ain Shams University, Cairo</li><li><span>Robot</span>ABB IRB 120 with a custom end effector</li><li><span>Perception</span>2 × Intel RealSense D435i · YOLOv7</li><li><span>Grade</span>A+</li></ul>
-      <div class="link-row"><a class="btn btn-primary" href="https://drive.google.com/file/d/1WJtcR9IFvj20k1qim-MboZXcZrrmGiIC/view" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg>Demo video</a></div>
+      <div class="link-row"><a class="btn btn-primary" href="https://drive.google.com/file/d/1-TLygTtwy6SPgOJIIOU4PgJjQvYvMeGf/view?usp=sharing" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg>Demo video</a></div>
     </div>
   </section>
   <div class="page-body">
@@ -65,19 +65,19 @@
           <li><strong>Robot control</strong>: the ABB IRB 120 is driven from ROS through its EGM and RWS interfaces, with MoveIt
             for trajectory planning and a custom end effector for part handling.</li>
           <li><strong>Perception</strong>: two Intel RealSense D435i cameras. A custom YOLOv7 detector recognizes gears, bolts
-            and nuts (97% accuracy), and circle and Hough-line detection align the parts.</li>
-          <li><strong>Safety</strong>: MediaPipe human-pose estimation and an OctoMap of the workspace let the robot avoid people
-            and re-plan its path on the fly.</li>
+            and nuts (92.6% recall at mAP@0.5), and circle and Hough-line detection align the parts.</li>
+          <li><strong>Safety</strong>: MediaPipe human-pose estimation, plus YOLOv8 segmentation of people and obstacles mapped
+            onto the RealSense depth image into an OctoMap, so MoveIt re-plans around them.</li>
           <li><strong>Interaction</strong>: voice commands (Pocketsphinx) to start and stop the robot, and a Tkinter GUI for
             monitoring and control.</li>
         </ul>
         <div class="gallery"><figure class="figure"><a class="zoom" href="../images/collaborative_assembly/octomap.jpg"><img src="../images/collaborative_assembly/octomap.jpg" alt="RViz view: the robot and coloured OctoMap voxels where people stand next to the table" width="516" height="357" loading="lazy" decoding="async"></a><figcaption>OctoMap of the people in the workspace, used for obstacle avoidance and re-planning</figcaption></figure><figure class="figure"><a class="zoom" href="../images/gp.png"><img src="../images/gp.png" alt="Model of the ABB IRB 120 with the red custom end effector" width="841" height="802" loading="lazy" decoding="async"></a><figcaption>Robot model with the custom end effector</figcaption></figure></div>
 
         <h2>Demo</h2>
-        <figure class="video"><div class="embed"><button class="embed-btn no-image" type="button" data-embed="https://drive.google.com/file/d/1WJtcR9IFvj20k1qim-MboZXcZrrmGiIC/preview" data-title="Collaborative assembly demo" aria-label="Play video: Collaborative assembly demo (loads Google Drive)"><span class="embed-play"><svg class="icon solid" aria-hidden="true"><use href="#i-play"/></svg></span><span class="embed-label">Collaborative assembly demo<small>Plays from Google Drive</small></span></button></div><figcaption class="embed-note">Collaborative assembly demo · <a href="https://drive.google.com/file/d/1WJtcR9IFvj20k1qim-MboZXcZrrmGiIC/view" target="_blank" rel="noopener">Open in Google Drive</a></figcaption></figure>
+        <figure class="video"><div class="embed"><button class="embed-btn no-image" type="button" data-embed="https://drive.google.com/file/d/1-TLygTtwy6SPgOJIIOU4PgJjQvYvMeGf/preview" data-title="Collaborative assembly demo" aria-label="Play video: Collaborative assembly demo (loads Google Drive)"><span class="embed-play"><svg class="icon solid" aria-hidden="true"><use href="#i-play"/></svg></span><span class="embed-label">Collaborative assembly demo<small>Plays from Google Drive</small></span></button></div><figcaption class="embed-note">Collaborative assembly demo · <a href="https://drive.google.com/file/d/1-TLygTtwy6SPgOJIIOU4PgJjQvYvMeGf/view?usp=sharing" target="_blank" rel="noopener">Open in Google Drive</a></figcaption></figure>
 
         <h2>Tech stack</h2>
-        <ul class="tag-list"><li class="tag">ROS</li><li class="tag">MoveIt</li><li class="tag">ABB EGM / RWS</li><li class="tag">Python</li><li class="tag">YOLOv7</li><li class="tag">OpenCV</li><li class="tag">MediaPipe</li><li class="tag">OctoMap</li><li class="tag">Intel RealSense D435i</li><li class="tag">Pocketsphinx</li><li class="tag">Tkinter</li></ul>
+        <ul class="tag-list"><li class="tag">ROS</li><li class="tag">MoveIt</li><li class="tag">ABB EGM / RWS</li><li class="tag">Python</li><li class="tag">YOLOv7</li><li class="tag">YOLOv8</li><li class="tag">OpenCV</li><li class="tag">MediaPipe</li><li class="tag">OctoMap</li><li class="tag">Intel RealSense D435i</li><li class="tag">Pocketsphinx</li><li class="tag">Tkinter</li></ul>
 
       </article>
       <nav class="pager" aria-label="More projects"><a class="prev" href="hcm_lab.html"><small><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg>Previous</small><span>Exoskeleton and biomechanics lab</span></a><a class="next" href="step-scope.html"><small>Next<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></small><span>Step Scope</span></a><a class="all" href="../index.html#projects"><small>All projects</small><span>Back to the portfolio</span></a></nav>
