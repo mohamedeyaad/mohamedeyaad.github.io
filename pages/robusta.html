@@ -1,146 +1,106 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Mohamed Eyad's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="stylesheet" href="../assets/css/lightbox.css" />
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robusta · Mohamed Eyad</title>
+  <meta name="description" content="Robusta: an autonomous coffee-shop service robot with Gmapping SLAM and ROS navigation on a Jetson Nano, PID wheel control on an STM32 and customer emotion recognition.">
+  <meta name="author" content="Mohamed Eyad">
+  <link rel="canonical" href="https://mohamedeyaad.github.io/pages/robusta.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mohamed Eyad">
+  <meta property="og:title" content="Robusta · Mohamed Eyad">
+  <meta property="og:description" content="Robusta: an autonomous coffee-shop service robot with Gmapping SLAM and ROS navigation on a Jetson Nano, PID wheel control on an STM32 and customer emotion recognition.">
+  <meta property="og:url" content="https://mohamedeyaad.github.io/pages/robusta.html">
+  <meta property="og:image" content="https://mohamedeyaad.github.io/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1a24">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/space-grotesk-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol><symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol><symbol id="i-youtube" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol><symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol><symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></symbol><symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></symbol><symbol id="i-video" viewBox="0 0 24 24"><path d="m16 13 5.2 3.5a.5.5 0 0 0 .8-.4V7.9a.5.5 0 0 0-.8-.4L16 11"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol id="i-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></symbol><symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol><symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol><symbol id="i-folder" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></symbol><symbol id="i-pr" viewBox="0 0 24 24"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><path d="M6 9v12"/></symbol><symbol id="i-bot" viewBox="0 0 24 24"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></symbol><symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol><symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol><symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol><symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></symbol></svg>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" aria-label="Mohamed Eyad, home"><span class="brand-mark" aria-hidden="true">M<span>E</span></span>Mohamed Eyad</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon icon-close" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav-links"><li><a href="../index.html#about">About</a></li><li><a href="../index.html#experience">Experience</a></li><li><a href="../index.html#projects">Projects</a></li><li><a href="../index.html#skills">Skills</a></li><li><a href="../index.html#education">Education</a></li><li><a href="../index.html#contact">Contact</a></li></ul>
+      <a class="btn btn-primary btn-sm" href="../files/Mohamed_Eyad_CV.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Résumé</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero on-dark" aria-labelledby="page-title">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="../index.html#projects"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg>Projects</a></li>
+        <li aria-current="page">Robusta</li>
+      </ol>
+      <p class="kicker">Design of Mechatronics 2 course · 2022 · Grade A</p>
+      <h1 id="page-title">Robusta: autonomous service robot</h1>
+      <p class="lede">A team project to design and build an autonomous mobile robot that serves customers in coffee shops.</p>
+      <ul class="facts"><li><span>Course</span>Design of Mechatronics 2, Ain Shams University</li><li><span>Compute</span>NVIDIA Jetson Nano · STM32 low-level controller</li><li><span>Software</span>ROS · Gmapping · Navigation Stack</li><li><span>Tools</span>Inventor · SolidWorks · Gazebo · RViz · Arduino IDE</li></ul>
+      <div class="link-row"><a class="btn btn-primary" href="https://github.com/ASU-Robusta" target="_blank" rel="noopener"><svg class="icon solid" aria-hidden="true"><use href="#i-github"/></svg>Code on GitHub</a><a class="btn btn-ghost" href="../files/Final_Poster.pdf" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Poster (PDF)</a><a class="btn btn-ghost" href="https://www.youtube.com/@robusta8620" target="_blank" rel="noopener"><svg class="icon solid" aria-hidden="true"><use href="#i-youtube"/></svg>YouTube channel</a></div>
+    </div>
+  </section>
+  <div class="page-body">
+    <div class="container">
+      <article class="prose">
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="../images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="../index.html" >Mohamed Eyad</a></h1>
-					<p>Robotics Engineer</p>
-				</header>
-				<nav id="nav">
-					<ul>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/mohamed-eyad-b73404191" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/mohamedeyaad" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:mooeyad@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
+        <h2>Requirements</h2>
+        <ul>
+          <li>Navigate autonomously indoors: localize within the working environment, and detect and avoid static and
+            dynamic obstacles.</li>
+          <li>Build a map of a new environment on the first run, then localize in it. An RPLidar interfaced with an NVIDIA
+            Jetson Nano runs the ROS Gmapping package, which is based on the FastSLAM algorithm.</li>
+          <li>Control the speed of the robot with PID controllers and wheel encoders on the low-level controller (STM32).</li>
+          <li>Recognize the customer's emotions with computer vision.</li>
+        </ul>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <h2>System design</h2>
+        <figure class="figure wide"><a class="zoom" href="../images/robusta/block_diagram.png"><img src="../images/robusta/block_diagram.png" alt="Block diagram of Robusta: sensors, actuators and the communication links between the devices" width="910" height="537" loading="lazy" decoding="async"></a><figcaption>System block diagram: sensors, actuators and the communication between devices.</figcaption></figure>
+        <figure class="figure diagram wide"><a class="zoom" href="../images/robusta/Architecture.png"><img src="../images/robusta/Architecture.png" alt="Software architecture diagram of Robusta" width="1466" height="491" loading="lazy" decoding="async"></a><figcaption>Software architecture.</figcaption></figure>
+        <div class="gallery contain"><figure class="figure"><a class="zoom" href="../images/robusta/robusta.jpg"><img src="../images/robusta/robusta.jpg" alt="CAD render of the Robusta robot" width="400" height="400" loading="lazy" decoding="async"></a><figcaption>CAD design</figcaption></figure><figure class="figure"><a class="zoom" href="../images/robusta/robusta_real.jpg"><img src="../images/robusta/robusta_real.jpg" alt="The built Robusta robot in a corridor" width="379" height="669" loading="lazy" decoding="async"></a><figcaption>The built robot</figcaption></figure></div>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center" >
-									<img src="../images/Screenshot 2022-11-11 005112.png" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Robusta - Autonomous Service Robot</h2>
-									</header>
-									<p>
-										This project was the course project of "Design of Mechatronics 2" supervised by the Mechatronics Department @ Faculty of Engineering - Ain Shams University, Egypt.
-										The main target of the project is to design and build an autonomous mobile robot suitable for doing servicing tasks in the coffee shops.
-										<br>Grade achieved: A 
-										<br>You can check the organization of the project on Github, as well as the poster from here.								
-										<br/><br/>
-										<ul class="feature-icons">
-											<li class="icon solid fa-book"><a href="../files/Final_Poster.pdf" target="_blank">Poster</a></li>
-											<li class="icon brands fa-github"><a href="https://github.com/ASU-Robusta" target="_blank">Code</a></li>
-											<li class="icon brands fa-youtube"><a href="https://www.youtube.com/@robusta8620" target="_blank">YouTube</a></li>
-										</ul>	
-										<b>The main requirements for this robot were:</b>
-										<ul>
-											<li>The robot should be able to navigate autonomously in an indoor environment. Therefore, it must be able to localize itself within its working enviroment and detect static and dynamic obstacles and avoid them.</li>
-											<li>The robot should build a map for the environment for the first time it operates in and then be able to localize itself in it. RpLiDaR was used for this task interfaced with Nvidia Jetson Nano. Gmapping Pacakge in ROS, which relies on the fastSLAM algorithm, was implemented.</a></li>
-											<li>PID controller on the wheels, with encoders, were implemented on the Low-Level Control (STM32), to control the speed of the robot.</li>
-											<li>Emotion recognition of the customer using modern techniques of computer vision.</li>
-											<i>Tools used: Inventor, SolidWorks, Ubuntu Linux, ROS, Gazebo, Rviz, Arduino IDE </i>
-										</ul>							
-										<b>System Block Diagram:</b>
-										<br>It shows the sensors and actuators that have been used in the robot and the communication protocol done between each device.
-										<br>
-										<a href="../images/robusta/block_diagram.png" data-lightbox="mygallery" data-title="System Block Diagram"><img src="../images/robusta/block_diagram.png"  style="max-width: 100%;"></a>
-										<br><br><b>System Software Architecture:</b>
-										<br><a href="../images/robusta/Architecture.png" data-lightbox="mygallery" data-title="System Software Architecture"><img src="../images/robusta/Architecture.png" style="max-width: 100%;"></a>
+        <h2>Testing the subsystems</h2>
+        <figure class="video"><video controls preload="none" playsinline poster="../images/posters/robusta_lidar_mapping.jpg" width="960" height="540"><source src="../videos/robusta/RpLiDaR%20testing%20Mapping.mp4" type="video/mp4">Your browser cannot play this video. <a href="../videos/robusta/RpLiDaR%20testing%20Mapping.mp4">Download it</a>.</video><figcaption>Testing mapping with the RPLidar in RViz.</figcaption></figure>
+        <figure class="video portrait"><video controls preload="none" playsinline poster="../images/posters/robusta_lidar_jetson.jpg" width="406" height="720"><source src="../videos/robusta/Interfacing%20Lidar%20with%20Jetson%20Nano%2C%20SLAM.mp4" type="video/mp4">Your browser cannot play this video. <a href="../videos/robusta/Interfacing%20Lidar%20with%20Jetson%20Nano%2C%20SLAM.mp4">Download it</a>.</video><figcaption>Interfacing the RPLidar with the Jetson Nano.</figcaption></figure>
+        <figure class="figure"><a class="zoom" href="../images/web/robusta-map.jpg"><img src="../images/web/robusta-map.jpg" alt="Occupancy-grid map of an indoor space built by the robot" width="1600" height="1065" loading="lazy" decoding="async"></a><figcaption>A map built by the robot in the real environment.</figcaption></figure>
+        <figure class="video portrait"><video controls preload="none" playsinline poster="../images/posters/robusta_hector.jpg" width="408" height="720"><source src="../videos/robusta/Hector_Slam.mp4" type="video/mp4">Your browser cannot play this video. <a href="../videos/robusta/Hector_Slam.mp4">Download it</a>.</video><figcaption>Mapping the real environment.</figcaption></figure>
 
-										<br/><br/><b>Here are some videos showing the testing of some subsystems:</b>
-										<br/>This video shows testing mapping by the LiDaR on Rviz.
-										<video width="100%" height="auto" controls >
-											<source src="../videos/robusta/RpLiDaR testing Mapping.mp4" type="video/mp4">
-										</video>	
-										<br/>This video shows Interfacing Rplidar with Jetson Nano.<br/>
-										<video width="100%" height="auto" controls >
-											<source src="../videos/robusta/Interfacing Lidar with Jetson Nano, SLAM.mov" type="video/mp4">
-										</video>
-										<div class="gallery">
-											The following map was a real map made by the robot in the real environment.
-											<a href="../images/robusta/map.png" data-lightbox="mygallery" data-title="The real platform"><img src="../images/robusta/map.png" style="max-width: 100%;" ></a>
-											<br> Video of real mapping.<br>
-											<video width="100%" height="auto" controls >
-												<source src="../videos/robusta/Hector_Slam.mp4" type="video/mp4">
-											</video>
-										</div>
-										<br>
-										<b>Simulations:</b>
-										<br/><p>This video shows the robot while mapping the enviroment for the first time using Gmapping SLAM algorithm in Gazebo.
-										<!--<<div class="iframe-container">
-											<iframe width="720" height="480" src="https://www.youtube.com/watch?v=bEYWCdNaAF4&t=1s" title="YouTube video player" frameborder="0" 
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>										
-										</div>-->
-										<br>
-										<video width="100%" height="auto" controls >
-											<source src="../videos/robusta/SLAM using gmapping - Robusta.mp4" type="video/mp4">
-										</video>	
-										<br/>Video shows the navigation of the robot and the whole working cycle.
-										<!--<div class="iframe-container">
-											<iframe width="720" height="480" src="https://www.youtube.com/watch?v=XuYy82r1dEo&t=59s" title="YouTube video player" frameborder="0" 
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>										
-										</div>-->
-										<video width="100%" height="auto" poster="../videos/robusta/thumbnail.png" controls >
-											<source src="../videos/robusta/navigation stack_1.mp4" type="video/mp4">
-										</video>
-										<br><br/><i>*This project is still under development, my team and I are planning to market the robot to one of the coffee shops in Egypt.</i>
-										</p>
-										<ul><a href="../index.html#three" class="button">Back</a></ul>
+        <h2>Simulation</h2>
+        <figure class="video"><video controls preload="none" playsinline poster="../images/posters/robusta_gmapping.jpg" width="960" height="540"><source src="../videos/robusta/SLAM%20using%20gmapping%20-%20Robusta.mp4" type="video/mp4">Your browser cannot play this video. <a href="../videos/robusta/SLAM%20using%20gmapping%20-%20Robusta.mp4">Download it</a>.</video><figcaption>Mapping the environment for the first time with Gmapping SLAM in Gazebo.</figcaption></figure>
+        <figure class="video"><video controls preload="none" playsinline poster="../images/posters/robusta_navigation.jpg" width="960" height="537"><source src="../videos/robusta/navigation%20stack_1.mp4" type="video/mp4">Your browser cannot play this video. <a href="../videos/robusta/navigation%20stack_1.mp4">Download it</a>.</video><figcaption>Navigation and the whole service cycle.</figcaption></figure>
+        <p class="note">After the course, the team planned to develop Robusta further for a coffee shop in Egypt.</p>
 
-								</div>
-							</section>
+        <h2>Tech stack</h2>
+        <ul class="tag-list"><li class="tag">ROS</li><li class="tag">Gmapping</li><li class="tag">Navigation Stack</li><li class="tag">NVIDIA Jetson Nano</li><li class="tag">RPLidar</li><li class="tag">STM32</li><li class="tag">PID</li><li class="tag">Gazebo</li><li class="tag">RViz</li><li class="tag">Inventor</li><li class="tag">SolidWorks</li></ul>
 
-
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/lightbox.js"></script>
-			<script src="../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
-
-	</body>
+      </article>
+      <nav class="pager" aria-label="More projects"><a class="prev" href="rehablitation_robotics.html"><small><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg>Previous</small><span>Control test rig for rehabilitation robotics</span></a><a class="next" href="computer_vision.html"><small>Next<svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></small><span>Vehicle counting with YOLOv5</span></a><a class="all" href="../index.html#projects"><small>All projects</small><span>Back to the portfolio</span></a></nav>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p style="margin:0">&copy; 2026 Mohamed Eyad · Robotics Engineer · Genova, Italy</p>
+    <ul class="footer-links">
+      <li><a href="mailto:mooeyad@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/mohamed-eyad-b73404191" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/mohamedeyaad" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="../files/Mohamed_Eyad_CV.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></li>
+      <li><a href="#main">Back to top &uarr;</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
 </html>
