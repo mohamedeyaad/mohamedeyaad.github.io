@@ -64,8 +64,8 @@
         <ul>
           <li><strong>Robot control</strong>: the ABB IRB 120 is driven from ROS through its EGM and RWS interfaces, with MoveIt
             for trajectory planning and a custom end effector for part handling.</li>
-          <li><strong>Perception</strong>: two Intel RealSense D435i cameras. A custom YOLOv7 detector recognizes gears, bolts
-            and nuts (92.6% recall at mAP@0.5), and circle and Hough-line detection align the parts.</li>
+          <li><strong>Perception</strong>: two Intel RealSense D435i cameras. A custom YOLOv7 detector recognizes gears, bearings,
+            bolts, nuts, flanges and springs (92.6% mAP@0.5), and circle and Hough-line detection align the parts.</li>
           <li><strong>Safety</strong>: MediaPipe human-pose estimation, plus YOLOv8 segmentation of people and obstacles mapped
             onto the RealSense depth image into an OctoMap, so MoveIt re-plans around them.</li>
           <li><strong>Interaction</strong>: voice commands (Pocketsphinx) to start and stop the robot, and a Tkinter GUI for
