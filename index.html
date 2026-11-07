@@ -198,6 +198,15 @@
       </article>
       <div class="cards">
       <article class="card">
+        <div class="card-media"><img src="images/cards/fewshot_gs.jpg" alt="Renders of the Tanks &amp; Temples truck from 5 real views, with and without synthetic views, next to the ground truth" width="960" height="540" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <p class="card-meta">2026 · University of Genova</p>
+          <h3><a href="pages/fewshot_gaussian_splatting.html">Few-shot 3D Gaussian Splatting with diffusion-based data augmentation</a></h3>
+          <p>Does adding diffusion-generated views help 3D Gaussian Splatting when only a handful of real photos exist? I compared inpainting, outpainting and pose-guided Stable Diffusion augmentation on Tanks &amp; Temples Truck across 3 subset sizes (5, 10 and 20 real views) and 4 synthetic-data ratios, in 242 training runs over 3 seeds. Synthetic views help only at very few real views (up to +0.29 dB PSNR with outpainting at 5 views) and become harmful by 20 views. Pose novelty explains the crossover.</p>
+          <ul class="tag-list"><li class="tag">Python</li><li class="tag">3D Gaussian Splatting</li><li class="tag">COLMAP</li><li class="tag">Stable Diffusion</li><li class="tag">PyTorch</li></ul>
+          <div class="card-links"><a href="https://github.com/mohamedeyaad/fewshot-gaussian-splatting" target="_blank" rel="noopener"><svg class="icon solid" aria-hidden="true"><use href="#i-github"/></svg>Code</a></div>
+        </div>
+      </article><article class="card">
         <div class="card-media"><img src="images/cards/aruco.jpg" alt="Husarion ROSbot 2 approaching an ArUco marker, labelled simulation to real robot" width="490" height="275" loading="lazy" decoding="async"></div>
         <div class="card-body">
           <p class="card-meta">2025 – 2026 · University of Genova</p>
@@ -300,7 +309,7 @@
         <ul class="chips"><li class="chip lv-3">Python (NumPy, Pandas, PyTorch)</li><li class="chip lv-2">C / C++</li><li class="chip lv-2">MATLAB / Simulink</li><li class="chip lv-2">Linux, Git</li><li class="chip lv-2">Software architecture &amp; UML</li><li class="chip lv-1">rostest, rosbag replay</li><li class="chip lv-1">LabVIEW</li></ul>
       </div><div class="skill-group">
         <h3><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg>Control &amp; signal processing</h3>
-        <ul class="chips"><li class="chip lv-2">PID and feedback control</li><li class="chip lv-2">Force, admittance, impedance control</li><li class="chip lv-2">Sensor fusion &amp; synchronization</li><li class="chip lv-2">Biosignals: ECG/HRV, PPG, EMG, EEG</li><li class="chip lv-2">Computer vision: OpenCV, YOLO</li><li class="chip lv-1">Local LLMs on edge devices (Ollama)</li></ul>
+        <ul class="chips"><li class="chip lv-2">PID and feedback control</li><li class="chip lv-2">Force, admittance, impedance control</li><li class="chip lv-2">Sensor fusion &amp; synchronization</li><li class="chip lv-2">Biosignals: ECG/HRV, PPG, EMG, EEG</li><li class="chip lv-2">Computer vision: OpenCV, YOLO, 3D Gaussian Splatting, COLMAP, diffusion models</li><li class="chip lv-1">Local LLMs on edge devices (Ollama)</li></ul>
       </div><div class="skill-group">
         <h3><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg>Hardware &amp; tools</h3>
         <ul class="chips"><li class="chip lv-2">STM32, ESP8266, AVR / Arduino</li><li class="chip lv-2">NVIDIA Jetson, Raspberry Pi</li><li class="chip lv-2">Qualisys, AMTI, Delsys EMG</li><li class="chip lv-2">CAD: Inventor, SolidWorks</li><li class="chip lv-2">3D printing &amp; scanning</li><li class="chip lv-1">Proteus, Altium Designer</li><li class="chip lv-1">PLC (Schneider Electric)</li><li class="chip lv-1">RTOS</li></ul>

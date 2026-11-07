@@ -479,6 +479,19 @@ strong, b { color: var(--ink); font-weight: 650; }
 .prose ul.tag-list li.tag { padding: 5px 10px; font-size: .86rem; }
 .prose ul.tag-list li::before { display: none; }
 
+/* result tables: scroll sideways on narrow screens instead of squeezing */
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.prose .table-wrap { margin-top: .8em; }
+.prose table { width: 100%; border-collapse: collapse; font-size: .95rem; font-variant-numeric: tabular-nums; line-height: 1.4; }
+.prose th, .prose td { padding: 10px 16px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--line); }
+.prose thead th { background: var(--surface-2); color: var(--ink); font-weight: 650; }
+.prose tbody th { color: var(--ink); font-weight: 600; }
+.prose th:first-child { text-align: left; }
+.prose tbody tr:last-child > * { border-bottom: 0; }
+.prose td strong { color: var(--accent-strong); }
+@media (max-width: 640px) { .prose th, .prose td { padding: 9px 10px; font-size: .86rem; } }
+@media (max-width: 380px) { .prose th, .prose td { padding: 8px 7px; font-size: .82rem; } }
+
 .figure { margin: 2em 0; }
 .prose > .figure { margin-top: 2em; }
 .figure.wide { width: min(1040px, calc(100vw - 2 * var(--gutter))); position: relative; left: 50%; transform: translateX(-50%); }
