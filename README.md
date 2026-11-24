@@ -29,3 +29,12 @@ A static site with no build step: plain HTML, one stylesheet and one small scrip
 
 Old template files (`assets/css/main.css`, `assets/js/jquery*.js`, `assets/sass/`, `assets/webfonts/`, ...) are no longer
 used by any page and can be deleted.
+
+## Analytics
+
+[GoatCounter](https://www.goatcounter.com) (no cookies, no IP addresses stored). Dashboard: <https://mohamedeyaad.goatcounter.com>
+
+- The script is the `<script data-goatcounter=...>` line at the end of every page's `<head>`. A new page needs it too.
+- Clicks are counted as events on links carrying `data-goatcounter-click`: `cv-download`, `email-click`, `linkedin-click`, `github-click`.
+- Per-application links: add `?utm_campaign=company-name` to the portfolio URL you send; visits show up under Campaigns.
+- To stop counting your own visits, open `https://mohamedeyaad.github.io/#toggle-goatcounter` once in each browser you use (reload the page after).
