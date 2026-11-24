@@ -231,7 +231,7 @@ strong, b { color: var(--ink); font-weight: 650; }
 .hero h1 { font-size: clamp(2.6rem, 6.4vw, 4.4rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1; margin-bottom: 20px; }
 .hero-lead { font: 500 clamp(1.25rem, 2.3vw, 1.6rem)/1.35 var(--font-display); color: var(--on-dark); letter-spacing: -0.01em; margin-bottom: 16px; max-width: 30ch; }
 .hero-lead em { font-style: normal; color: var(--accent); }
-.hero-sub { max-width: 58ch; color: var(--on-dark-muted); margin-bottom: 22px; }
+.hero-sub { max-width: 58ch; color: var(--on-dark-muted); margin-bottom: 30px; }
 .hero-meta { display: flex; flex-wrap: wrap; gap: 10px 22px; list-style: none; margin-bottom: 30px; font-size: .95rem; color: var(--on-dark); }
 .hero-meta li { display: inline-flex; align-items: center; gap: 8px; }
 .hero-meta .icon { color: var(--accent); }
